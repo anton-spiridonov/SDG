@@ -24,6 +24,7 @@
     "build": "NODE_ENV=production webpack --config webpack.config.js",
     "build:dev": "NODE_ENV=development webpack --config webpack.config.js",
     "build:watch": "NODE_ENV=development node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --watch",
+    "eslint": "node_modules/.bin/eslint src/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -37,6 +38,13 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts, tsx}": [
+      "node_modules/.bin/eslint --max-warnings=0",
+      "prettier --write",
+      "git add"
     ]
   },
   "devDependencies": {
