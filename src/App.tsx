@@ -2,7 +2,8 @@ import React from "react";
 import "./App.scss";
 
 function App() {
-  return <div className="App">Привет мир</div>;
+  const title = "Привет мир";
+  return <div className="App">{title}</div>;
 }
 
 export default App;
