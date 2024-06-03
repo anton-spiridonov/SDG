@@ -78,6 +78,7 @@ module.exports = [
     devServer: {
       port: 3001,
       hot: true,
+      historyApiFallback: true,
     },
     mode: production ? "production" : "development",
     target: "web",

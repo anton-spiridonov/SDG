@@ -1,0 +1,15 @@
+.button {
+  background-color: var(--green-color);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &.disabled {
+    background-color: var(--light-gray-color);
+  }
+}
