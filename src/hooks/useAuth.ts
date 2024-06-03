@@ -3,6 +3,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { AuthStore } from "../store/AuthStore";
@@ -12,11 +13,17 @@ function useAuth() {
   const { user, setUser, isLoading, error, setError } = AuthStore();
   const navigate = useNavigate();
 
-  const signUp = async (email: string, password: string) => {
+  const signUp = async (
+    email: string,
+    password: string,
+    displayName: string
+  ) => {
     await createUserWithEmailAndPassword(auth, email, password)
-      .then((res) => {
+      .then(async (res) => {
         setUser(res.user);
-
+        await updateProfile(auth.currentUser as User, {
+          displayName,
+        });
         navigate("/");
       })
       .catch((error: Error) => setError(error.message));

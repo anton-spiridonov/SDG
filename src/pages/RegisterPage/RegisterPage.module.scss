@@ -1,0 +1,31 @@
+.registerPageWrapper {
+  display: flex;
+
+  .leftSide {
+    width: 50%;
+    height: 100vh;
+    background-color: var(--light-gray-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .headerRegister {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  .rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--orange-color);
+
+    .header {
+      font-size: 3rem;
+    }
+  }
+}

@@ -18,8 +18,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const { user, setUser, isLoading, setIsLoading } = AuthStore();
   const value = useMemo(() => ({ user }), [user]);
 
-  console.log(user);
-
   useEffect(() => {
     setIsLoading(true);
     onAuthStateChanged(auth, (user) => {
