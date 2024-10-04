@@ -1,0 +1,46 @@
+$appFontFamily: #{var(--app-font-family)};
+
+$appFontSizeXLL: 77px;
+$appLineHeightXLL: 85px;
+$appFontBoldXLL: 800 #{$appFontSizeXLL} / #{$appLineHeightXLL} $appFontFamily;
+
+$appFontSizeXL: 55px;
+$appLineHeightXL: 75px;
+$appFontBoldXL: 800 #{$appFontSizeXL} / #{$appLineHeightXL} $appFontFamily;
+
+
+$appFontSizeL: 38px;
+$appLineHeightL: 75px;
+$appFontBoldL: 600 unquote('#{$appFontSizeL} / #{$appLineHeightL}') $appFontFamily;
+
+$appFontSizeLL: 35px;
+$appLineHeightLL: 38px;
+$appFontBoldLL: 800 unquote('#{$appFontSizeLL} / #{$appLineHeightLL}') $appFontFamily;
+
+$appFontSizeLS: 28px;
+$appLineHeightLS: 38px;
+$appFontBoldLS: 700 unquote('#{$appFontSizeLS} / #{$appLineHeightLS}') $appFontFamily;
+
+$appFontSizeMS: 24px;
+$appLineHeightMS: 28px;
+$appFontBoldMS: 700 unquote('#{$appFontSizeMS} / #{$appLineHeightMS}') $appFontFamily;
+
+
+$appFontSizeM: 23px;
+$appLineHeightM: 32px;
+$appFontBoldM: 800 unquote('#{$appFontSizeM} / #{$appLineHeightM}') $appFontFamily;
+
+$appFontSizeS: 18px;
+$appLineHeightS: 24px;
+$appFontBoldS: 400 unquote('#{$appFontSizeS} / #{$appLineHeightS}') $appFontFamily;
+$appFontBoldSS: 700 unquote('#{$appFontSizeS} / #{$appLineHeightS}') $appFontFamily;
+
+$appFontSizeXXS: 14px;
+$appLineHeightXXS: 22px;
+$appFontBoldXXS: 400 unquote('#{$appFontSizeXXS} / #{$appLineHeightXXS}') $appFontFamily;
+$appFontBoldXXXS: 700 unquote('#{$appFontSizeXXS} / #{$appLineHeightXXS}') $appFontFamily;
+
+$appFontSizeXS: 12px;
+$appLineHeightXS: 18px;
+$appFontBoldXS: 400 unquote('#{$appFontSizeXS} / #{$appLineHeightXS}') $appFontFamily;
+$appFontBoldXSS: 800 unquote('#{$appFontSizeXS} / #{$appLineHeightXS}') $appFontFamily;

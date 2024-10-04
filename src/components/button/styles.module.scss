@@ -1,0 +1,25 @@
+@import "src/shared/vars.scss";
+@import "src/shared/typography.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 387px;
+  height: 81px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: $appWhite;
+  background: $appPrimaryGradientButton;
+  border: none;
+  font: $appFontBoldM;
+  cursor: pointer;
+
+  @media screen and (width <= 680px) {
+    font: $appFontBoldXSS;
+    width: 251px;
+    height: 49px;
+    padding: 25px 51px 25px 51px;
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,55 @@
+@import "src/shared/vars.scss";
+@import "src/shared/typography.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media screen and (width <= 680px) {
+    gap: 18px;
+  }
+
+  .title {
+    max-width: 476px;
+    font: $appFontBoldXLL;
+    background: $appPrimaryGradientTitle;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media screen and (width <= 680px) {
+      font: $appFontBoldLL;
+      max-width: 289px;
+    }
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (width <= 680px) {
+      gap: 10px;
+    }
+
+    .number {
+      font: $appFontBoldXL;
+      background: $appPrimaryGradientTitle;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media screen and (width <= 680px) {
+        font: $appFontBoldLL;
+      }
+    }
+
+    .text {
+      color: $appGray;
+      font: $appFontBoldL;
+
+      @media screen and (width <= 680px) {
+        font: $appFontBoldS;
+      }
+    }
+  }
+}

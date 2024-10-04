@@ -1,0 +1,26 @@
+$zIndex1: 1;
+$zIndex2: 2;
+$zIndex3: 3;
+$zIndex4: 4;
+$zIndex5: 5;
+
+$appPrimary100: #e51726;
+$appPrimary150: #d4208c;
+
+$appPrimaryGradientTitle: linear-gradient(
+  145.08deg,
+  $appPrimary100 12.35%,
+  $appPrimary150 83.63%
+);
+
+$appPrimaryGradientButton: linear-gradient(
+  238.08deg,
+  $appPrimary150 0.42%,
+  $appPrimary100 82.5%
+);
+
+$appRed: #ff0000;
+
+$appGray: #3a3a3a;
+$appGray100: #b3b3b3;
+$appWhite: #ffffff;
